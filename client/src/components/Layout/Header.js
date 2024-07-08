@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import {message} from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+import '../../styles/Header.css'
 
 const Header = () => {
     const [loginUser, setLoginUser] = useState('');
@@ -26,13 +28,25 @@ const Header = () => {
                         <span className="navbar-toggler-icon" />
                     </button>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <Link className="navbar-brand" to="/">Expense Tracker</Link>
+                        <Link className="navbar-brand" to="/">Expense Tracker Application</Link>
                         
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                {" "}
-                                 <p className='nav-link'>{loginUser && loginUser.name} </p>{" "}
-                            </li>
+
+                             <li className="nav-item">
+
+                                {loginUser && loginUser.name ? (
+
+                                    <p className="nav-link">
+                                        <UserOutlined className="me-2" /> {/* Replace with your icon component */}
+                                        {loginUser.name}
+                                    </p>
+                ) : (
+                  <Link to="/login" className="nav-link">
+                    <i className="fas fa-sign-in-alt me-2"></i>  {/* Added icon for login */}
+                    Login
+                  </Link>
+                )}
+              </li>
 
                             <li className="nav-item">
                               <button className='btn btn-primary'

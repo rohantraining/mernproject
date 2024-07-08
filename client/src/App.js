@@ -21,7 +21,7 @@ export function ProtectedRoutes(props){
     return props.children;
     
   }else{
-    return <Navigate to="/login"/>
+    return <Navigate to="/register"/>
   }
 }
 

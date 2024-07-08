@@ -21,7 +21,7 @@ app.use(cors())
 
 // user routes 
 app.get('/', (req,res) => {
-    res.send('<h1>Hello from server</h1>')
+    res.send('<h1>Hello from server.</h1>')
 });
 app.use('/api/v1/users', require('./routes/userRoute'))
 

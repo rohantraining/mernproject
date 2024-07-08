@@ -2,7 +2,9 @@ import React, {useState,useEffect} from 'react'
 import {Form,Input, message, Spin as AntSpin} from 'antd'
 import { Link, useNavigate } from 'react-router-dom';
 import axios  from 'axios';
+import { UserOutlined, MailOutlined, LockOutlined } from '@ant-design/icons';
 import Spinner from '../components/Spinner';
+import '../styles/LoginPage.css';
 
 const Login = () => {
     const [loading, setLoading] = useState(false)
@@ -36,11 +38,11 @@ useEffect(() => {
         <Form layout="vertical" onFinish={submitHandler}>
             <h1>Login Form</h1>
 
-            <Form.Item label="Email" name="email">
+            <Form.Item label= {<span><MailOutlined /> Email</span>} name="email">
                 <Input type='email'/>
             </Form.Item>
 
-            <Form.Item label="Password" name="password">
+            <Form.Item label={<span><LockOutlined/>Password</span>}name="password">
                 <Input type='password'/>
             </Form.Item>
 

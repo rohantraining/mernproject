@@ -1,0 +1,54 @@
+/* header.css */
+
+/* Base styles */
+.navbar {
+  padding: 1rem 0;
+  background-color: #f8f9fa;  /* Light gray background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link,
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;  /* Add some padding to links and button */
+  margin: 0.5rem;  /* Add some margin between links and button */
+}
+
+/* Link hover styles */
+.nav-link:hover,
+.btn:hover {
+  opacity: 0.8;  /* Slight opacity change on hover */
+}
+
+/* Custom styles for the header component */
+.navbar-brand i {
+  margin-right: 0.5rem;
+  color: #2196f3;  /* Blue color for the icon */
+}
+
+.btn-secondary {
+  background-color: #2196f3;  /* Blue background color for logout button */
+  border-color: #2196f3;  /* Blue border color for logout button */
+  color: #fff;  /* White text color for logout button */
+}
+
+.btn-secondary:hover {
+  background-color: #1779ba;  /* Darker blue on hover for logout button */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link,
+  .btn {
+    font-size: 0.8rem;
+  }
+}

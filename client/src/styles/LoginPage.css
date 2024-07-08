@@ -1,0 +1,82 @@
+/* styles/LoginPage.css */
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../images/download.jpg'); /* Update the path to your image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.register-page form {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #d9d9d9; /* Outline */
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.register-page .ant-form-item {
+    margin-bottom: 20px;
+}
+
+.register-page .ant-input {
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    transition: border-color 0.3s;
+}
+
+.register-page .ant-input:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.register-page .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-page .btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.register-page .btn-primary:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.register-page a {
+    color: #1890ff;
+    transition: color 0.3s;
+}
+
+.register-page a:hover {
+    color: #40a9ff;
+}
